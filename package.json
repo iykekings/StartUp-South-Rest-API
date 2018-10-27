@@ -1,0 +1,53 @@
+{
+  "name": "start-up_south_rest_api",
+  "version": "1.0.0",
+  "description": "Restful API for startup south events",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js --exec babel-node --presets env",
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "heroku-postbuild": "npm install",
+    "start": "babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iykekings/StartUp-South-Rest-API.git"
+  },
+  "keywords": [
+    "Rest",
+    "API",
+    "MongoDB",
+    "Express",
+    "StartUp",
+    "South",
+    "JWT",
+    "Swagger",
+    "Secure"
+  ],
+  "author": "Ikechukwu Eze",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.3",
+    "joi": "^14.0.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.6",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "swagger-ui-express": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.3"
+  },
+  "bugs": {
+    "url": "https://github.com/iykekings/StartUp-South-Rest-API/issues"
+  },
+  "homepage": "https://github.com/iykekings/StartUp-South-Rest-API#readme"
+}
